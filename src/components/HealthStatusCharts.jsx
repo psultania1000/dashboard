@@ -4,7 +4,6 @@ const PieChartCard = ({ title, data }) => {
   const renderCustomizedLabel = () => {
     return null; // Remove default labels
   };
-
   return (
     <div>
       <div className="rounded-lg p-2 shadow-sm bg-gray-50">
