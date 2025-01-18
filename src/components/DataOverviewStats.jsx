@@ -4,11 +4,8 @@ import vertical from "../assets/vertical-line.svg";
 const DataOverviewStats = () => {
   return (
     <div className="flex gap-2 p-4 bg-white">
-      {/* Left Section - Stats */}
       <div className="flex flex-col gap-6 min-w-[180px] items-center justify-between">
-        {/* Total Rows */}
         <div className="flex items-center gap-1 bg-gray-50 py-4 px-2 rounded-2xl">
-          {/* <ListStart className="text-blue-600 w-6 h-6" /> */}
           <img src={horizontal} />
           <div>
             <div className="text-sm text-gray-500">Total Number of rows</div>
@@ -16,7 +13,6 @@ const DataOverviewStats = () => {
           </div>
         </div>
 
-        {/* Total Columns */}
         <div className="flex items-center gap-1 bg-gray-50 px-2 py-4 rounded-2xl">
           <img src={vertical} />
           <div>
@@ -26,7 +22,6 @@ const DataOverviewStats = () => {
         </div>
       </div>
 
-      {/* Middle Section - Metadata */}
       <div className="min-w-[250px] bg-gray-50 rounded-2xl p-4">
         <div className="text-base font-medium mb-3">Metadata</div>
         <div className="space-y-2">
@@ -49,10 +44,8 @@ const DataOverviewStats = () => {
         </div>
       </div>
 
-      {/* Right Section - SLA */}
       <div className="flex  bg-gray-50 rounded-2xl p-4 ">
         <div className="space-y-4 items-center justify-center">
-          {/* SLA Bar */}
           <div className="flex flex-col">
             <div className="flex justify-between mb-1">
               <span className="text-base">SLA</span>
@@ -61,7 +54,6 @@ const DataOverviewStats = () => {
             <div className="min-w-[200px] h-2 bg-green-500 rounded-full"></div>
           </div>
 
-          {/* Test Report */}
           <div className="space-y-2">
             <div className="flex justify-between mb-1">
               <span className="text-base">Test report</span>

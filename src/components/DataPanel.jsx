@@ -47,7 +47,7 @@ const DataPanel = () => {
                   <input
                     type="text"
                     placeholder="search Data"
-                    className="w-full h-6 px-4 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full h-6 px-4 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-100"
                   />
                 </div>
               </div>
@@ -89,9 +89,8 @@ const DataPanel = () => {
         {queries.map((query, index) => (
           <div
             key={index}
-            className="p-4 border rounded-xl flex justify-between items-center hover:border-blue-500 cursor-pointer group">
+            className="p-4 border rounded-xl flex justify-between items-center hover:border-blue-100 cursor-pointer group">
             <span className="text-gray-700">{query}</span>
-            {/* <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity" /> */}
             <img src={outer} className="border p-1 rounded-md" />
           </div>
         ))}

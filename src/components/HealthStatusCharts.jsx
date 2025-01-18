@@ -1,17 +1,7 @@
-import React from "react";
 import { PieChart, Pie, Cell } from "recharts";
 
 const PieChartCard = ({ title, data }) => {
-  const RADIAN = Math.PI / 180;
-  const renderCustomizedLabel = ({
-    cx,
-    cy,
-    midAngle,
-    innerRadius,
-    outerRadius,
-    percent,
-    index,
-  }) => {
+  const renderCustomizedLabel = () => {
     return null; // Remove default labels
   };
 
@@ -106,59 +96,6 @@ const HealthStatusChart = () => {
         <PieChartCard title="Test Results Breakdown" data={testResultsData} />
         <PieChartCard title="Monitored Tables" data={monitoredTablesData} />
       </div>
-
-      {/* <div className="flex gap-8">
-        <div className="flex gap-4">
-          <div className="flex items-center gap-2">
-            <div
-              className="w-3 h-3 rounded-full"
-              style={{ backgroundColor: "#4CAF50" }}></div>
-            <span className="text-sm text-gray-500">Success</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div
-              className="w-3 h-3 rounded-full"
-              style={{ backgroundColor: "#ef5350" }}></div>
-            <span className="text-sm text-gray-500">Failed</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div
-              className="w-3 h-3 rounded-full"
-              style={{ backgroundColor: "#1a237e" }}></div>
-            <span className="text-sm text-gray-500">Skipped</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div
-              className="w-3 h-3 rounded-full"
-              style={{ backgroundColor: "#ffd54f" }}></div>
-            <span className="text-sm text-gray-500">Broken</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div
-              className="w-3 h-3 rounded-full"
-              style={{ backgroundColor: "#7986cb" }}></div>
-            <span className="text-sm text-gray-500">Aborted</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div
-              className="w-3 h-3 rounded-full"
-              style={{ backgroundColor: "#616161" }}></div>
-            <span className="text-sm text-gray-500">Unknown</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div
-              className="w-3 h-3 rounded-full"
-              style={{ backgroundColor: "#1a237e" }}></div>
-            <span className="text-sm text-gray-500">Monitored</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div
-              className="w-3 h-3 rounded-full"
-              style={{ backgroundColor: "#616161" }}></div>
-            <span className="text-sm text-gray-500">Unmonitored</span>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

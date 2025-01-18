@@ -99,7 +99,6 @@ const DataQuality = () => {
       .cornerRadius(cornerRadius)
       .padAngle(padAngle);
 
-    // Draw background arcs
     svg
       .selectAll("path.background")
       .data(pie(data))
@@ -109,10 +108,9 @@ const DataQuality = () => {
       .attr("d", arc)
       .attr("fill", (d) => d.data.fill);
 
-    // Add overlay arc at 65%
     const overlayArc = d3
       .arc()
-      .innerRadius(innerRadius * 0.8) // Slightly smaller than main arcs
+      .innerRadius(innerRadius * 0.8)
       .outerRadius(innerRadius * 0.8)
       .startAngle(-Math.PI / 2)
       .endAngle(Math.PI / 2);
@@ -159,7 +157,6 @@ const DataQuality = () => {
       .style("font-size", "24px")
       .text("Good");
 
-    // Scale Graph
     const scaleWidth = 350;
     const scaleHeight = 100;
     const scale = d3
@@ -169,19 +166,16 @@ const DataQuality = () => {
       .append("g")
       .attr("transform", "translate(20,20)");
 
-    // Scale bar data
     const maxValue = 8;
     const currentValue = 6;
     const barHeight = 10;
     const lineHeight = 24;
 
-    // Create scale
     const x = d3
       .scaleLinear()
       .domain([0, maxValue])
       .range([0, scaleWidth - 40]);
 
-    // Draw background bar with rounded corners
     scale
       .append("rect")
       .attr("width", x(maxValue))
@@ -189,7 +183,6 @@ const DataQuality = () => {
       .attr("fill", "#f0f0f0")
       .attr("rx", barHeight / 2);
 
-    // Draw value bar with rounded corners
     scale
       .append("rect")
       .attr("width", x(currentValue))
@@ -197,7 +190,6 @@ const DataQuality = () => {
       .attr("fill", "#4caf50")
       .attr("rx", barHeight / 2);
 
-    // Add vertical lines at start and end
     scale
       .append("line")
       .attr("x1", 0)
@@ -279,7 +271,6 @@ const DataQuality = () => {
       .attr("stroke", "#999")
       .attr("stroke-width", 0.5);
 
-    // Add start and end values
     scale
       .append("text")
       .attr("x", 0)
