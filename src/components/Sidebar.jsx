@@ -8,7 +8,7 @@ const Sidebar = () => {
   console.log(logo);
   return (
     <>
-      <div className="flex flex-col p-2 rounded-2xl items-center w-16 h-screen bg-white border-r border-gray-200 py-4 space-y-4 mr-2">
+      <div className="flex flex-col p-2 rounded-2xl items-center w-16 h-[calc(100%)] bg-white border-r border-gray-200 py-4 space-y-4 mr-2">
         <div className="flex rounded-lg items-center justify-center">
           <img src={logo} className="border-b py-4" />
         </div>

@@ -4,7 +4,7 @@ import HealthStatusChart from "./HealthStatusCharts";
 
 const DataVisualPanel = () => {
   return (
-    <div className="w-[50%] h-screen rounded-2xl border-l border-gray-200 p-6 bg-white">
+    <div className="w-[50%] h-[calc(100%)] rounded-2xl border-l border-gray-200 p-6 bg-white">
       <div>
         <h2 className="text-2xl font-bold mb-8">Data Visual</h2>
         <hr />

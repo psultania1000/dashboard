@@ -5,8 +5,8 @@ import Sidebar from "./components/Sidebar";
 function App() {
   return (
     <>
-      <div className="max-h-full bg-gray-100 p-4">
-        <div className="flex">
+      <div className="h-screen bg-gray-100 p-4">
+        <div className="flex h-[calc(100%-0rem)]">
           <Sidebar />
           <DataPanel />
           <DataVisualPanel />

@@ -23,7 +23,7 @@ const DataPanel = () => {
   ];
 
   return (
-    <div className="w-[50%] flex flex-col mr-2 h-screen bg-white p-6 rounded-2xl">
+    <div className="w-[50%] flex flex-col mr-2 h-[calc(100%)] bg-white p-6 rounded-2xl">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2">
           <h1 className="text-2xl font-bold">Databot</h1>
